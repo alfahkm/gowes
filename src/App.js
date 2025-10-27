@@ -3,7 +3,8 @@ import HeroSection from './components/HeroSection';
 import AboutSection from './components/AboutSection';
 import TourSection from './components/TourSection';
 import MusicSection from './components/MusicSection';
-import NewsSection from './components/NewsSection';
+import MediaPressSection from './components/MediaPressSection';
+import NewsletterSignup from './components/NewsletterSignup';
 import './App.css';
 
 function App() {
@@ -13,7 +14,8 @@ function App() {
       <AboutSection />
       <TourSection />
       <MusicSection />
-      <NewsSection />
+      <MediaPressSection />
+      <NewsletterSignup />
     </div>
   );
 }
