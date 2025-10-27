@@ -5,7 +5,7 @@ const HeroSection = () => {
   return (
     <section className="hero-section">
       <video className="hero-video" autoPlay loop muted>
-        <source src={require('../assets/noosaofficial.mp4')} type="video/mp4" />
+        <source src={require('../assets/saturbike.mp4')} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       <div className="hero-overlay"></div>
