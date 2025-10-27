@@ -1,10 +1,23 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import './HeroSection.css';
 
 const HeroSection = () => {
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (video) {
+      video.play().catch(() => {
+        // Handle autoplay failure on mobile
+        video.muted = true;
+        video.play();
+      });
+    }
+  }, []);
+
   return (
     <section className="hero-section">
-      <video className="hero-video" autoPlay loop muted>
+      <video ref={videoRef} className="hero-video" autoPlay loop muted playsInline>
         <source src={require('../assets/saturbike.mp4')} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
