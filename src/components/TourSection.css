@@ -1,0 +1,74 @@
+.tour-section {
+  padding: 60px 20px;
+  text-align: center;
+  background: #000000;
+  color: #e0e0e0;
+}
+
+.tour-section h2 {
+  font-size: 2.5rem;
+  color: #ff66c4;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 40px;
+}
+
+.tour-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.tour-item {
+  width: 280px;
+  padding: 20px;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgb(255, 255, 255);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tour-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px rgb(255, 255, 255);
+}
+
+.tour-poster {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  box-shadow: 0 0 8px rgba(0, 255, 234, 0.5);
+}
+
+.tour-date {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 10px;
+}
+
+.tour-city {
+  font-size: 1.1rem;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 5px;
+}
+
+.tour-venue {
+  font-size: 1rem;
+  color: #c0c0c0;
+  font-family: 'Montserrat', sans-serif;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .tour-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .tour-item {
+    width: 90%;
+  }
+}
